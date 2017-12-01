@@ -64,11 +64,12 @@ nav ul{
   padding: 0.75rem;
 }
 
-.small{
+.tablet{
   display: none;
 }
 
-.items{
+.items ,
+.biz{
   display: flex;
   justify-content: space-around;
   margin-top: 3rem;
@@ -101,20 +102,17 @@ nav ul{
   padding: 0.5rem;
 }
 
-.biz{
-  display: flex;
-  justify-content: space-between;
 
-}
 
 .info{
-  width: 35%;
+  width: 35%
 }
 
 .info .location-hours{
-  display: flex;
+  display: block;
   background-color: black;
   padding: 1rem;
+
 }
 
 .black{
@@ -126,5 +124,52 @@ footer{
   text-align: left;
   padding: 5rem;
   margin-top: 4rem;
+
+}
+
+@media only screen and (max-width: 1024px){
+  .info{
+    width: 47%
+  }
+  .tablet{
+    display: block;
+    text-align: center;
+  }
+
+  nav ul{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+
+  .banner{
+    height: 15rem;
+  }
+
+  .new h4{
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+  .new h1{
+    font-size: 1rem;
+  }
+  .new h1, h4{
+    padding-left: 2rem;
+  }
+
+  .watch{
+    display: none;
+  }
+
+  .glasses{
+    display: none;
+  }
+
+  .pen{
+    width: 90%;
+  }
+
 
 }
